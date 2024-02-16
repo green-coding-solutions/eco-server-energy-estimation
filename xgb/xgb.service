@@ -1,0 +1,11 @@
+[Unit]
+Description=Start xgb.py with Configuration
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/xgb/start-xgb.sh
+
+[Install]
+WantedBy=multi-user.target

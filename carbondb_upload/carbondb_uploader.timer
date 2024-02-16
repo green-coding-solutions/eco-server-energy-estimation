@@ -1,0 +1,10 @@
+[Unit]
+Description=Uploads the data to the GMT backend every 10 minutes
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=10min
+Unit=carbondb_uploader.service
+
+[Install]
+WantedBy=timers.target

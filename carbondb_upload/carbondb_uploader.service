@@ -1,0 +1,9 @@
+[Unit]
+Description=Uploads the data from xgb to the GMT CarbonDB
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/carbondb_upload/start-carbondb_uploader.sh
+
+[Install]
+WantedBy=multi-user.target
